@@ -14,29 +14,30 @@
         <input type="text" id="display" placeholder="0" disabled="disabled" />
 
         <div id="operacoes">
-            <button type="button" class="btn" style="grid-area: reseta;">C</button>
-            <button type="button" class="btn" style="grid-area: multiplicacao;">&times</button>
-            <button type="button" class="btn" style="grid-area: divisao;">&divide</button>
+            <button type="button" class="btn" style="grid-area: reseta;" onclick="operation('C')">C</button>
+            <button type="button" class="btn" style="grid-area: multiplicacao;" onclick="operation('X')">&times</button>
+            <button type="button" class="btn" style="grid-area: divisao;" onclick="operation('/')">&divide</button>
     
-            <button type="button" class="btn" style="grid-area: sete;">7</button>
-            <button type="button" class="btn" style="grid-area: oito;">8</button>
-            <button type="button" class="btn" style="grid-area: nove;">9</button>
-            <button type="button" class="btn" style="grid-area: subtracao;">-</button>
+            <button type="button" class="btn" style="grid-area: sete;" onclick="number(7)">7</button>
+            <button type="button" class="btn" style="grid-area: oito;" onclick="number(8)">8</button>
+            <button type="button" class="btn" style="grid-area: nove;" onclick="number(9)">9</button>
+            <button type="button" class="btn" style="grid-area: subtracao;" onclick="operation('-')">-</button>
     
-            <button type="button" class="btn" style="grid-area: quatro;">4</button>
-            <button type="button" class="btn" style="grid-area: cinco;">5</button>
-            <button type="button" class="btn" style="grid-area: seis;">6</button>
-            <button type="button" class="btn" style="grid-area: soma;">+</button>
+            <button type="button" class="btn" style="grid-area: quatro;" onclick="number(4)">4</button>
+            <button type="button" class="btn" style="grid-area: cinco;" onclick="number(5)">5</button>
+            <button type="button" class="btn" style="grid-area: seis;" onclick="number(6)">6</button>
+            <button type="button" class="btn" style="grid-area: soma;" onclick="operation('+')">+</button>
     
-            <button type="button" class="btn" style="grid-area: um;">1</button>
-            <button type="button" class="btn" style="grid-area: dois;">2</button>
-            <button type="button" class="btn" style="grid-area: tres;">3</button>
-            <button type="button" class="btn" id="igual" style="grid-area: igual;">=</button>
+            <button type="button" class="btn" style="grid-area: um;" onclick="number(1)">1</button>
+            <button type="button" class="btn" style="grid-area: dois;" onclick="number(2)">2</button>
+            <button type="button" class="btn" style="grid-area: tres;" onclick="number(3)">3</button>
+            <button type="button" class="btn" id="igual" style="grid-area: igual;" onclick="operation('=')">=</button>
     
-            <button type="button" class="btn" style="grid-area: zero;">0</button>
-            <button type="button" class="btn" style="grid-area: ponto;">.</button>
+            <button type="button" class="btn" style="grid-area: zero;" onclick="number(0)">0</button>
+            <button type="button" class="btn" style="grid-area: ponto;" onclick="number('.')">.</button>
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
