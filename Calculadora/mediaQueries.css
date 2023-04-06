@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media (max-width:600px){
+    #calculadora,#display,#operacoes,.btn{
+        width: 100%;
+        height: 100%;
+    }
+    #calculadora{
+        border-radius: 0;
+    }
+    #display{
+        height: 100px;
+        font-size: 30px;
+    }
+    #operacoes{
+        max-width: 400px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+    }
+    .btn{
+        font-size: 25px;
+    }
+}
