@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+let data = new Date();
+data = (((data.getDate() )) + "/" + ((data.getMonth() + 1)) + "/" + data.getFullYear()); 
+
+function Hellowrld(props){
+
+  return <h1 className={props.className}>Hello world! {props.date}</h1>;
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hellowrld className="um" date={data} />
+      <Hellowrld className="dois" date={data} />
+      <Hellowrld className="tres" date={data} />
+      <Hellowrld className="quatro" date={data} />
+      <Hellowrld className="cinco" date={data} />
+    </>
   );
 }
 
