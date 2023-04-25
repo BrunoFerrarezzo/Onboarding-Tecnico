@@ -6,7 +6,7 @@
       "responsive-layout.mobile#mobile"
     ]
   },
-
+//Primeiro conteudo:slidere de duas imagens
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
@@ -36,6 +36,7 @@
       "blockClass": "carousel"
     }
   },
+  //--ignorar---
   "info-card#home": {
     "props": {
       "id": "info-card-home",
@@ -49,6 +50,7 @@
       "textAlignment": "center"
     }
   },
+  //----
   "responsive-layout.desktop#desktop":{
     "children":[
       "rich-text#desktop",
@@ -70,6 +72,7 @@
       "blockClass":"imgTitleDesktop"
     }
   },
+  //3 cards com imagens(bolsas,infantil,acessórios)
   "flex-layout.row#desktop-cards":{
     "props":{
       "fullWidth":true,
@@ -112,6 +115,152 @@
       "blockClass":"imgTitleDesktop"
     }
   },
+  //carrossel de produtos
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"]
+  },
+  "product-summary.shelf": {
+    "props":{
+      "blockClass":"shelf"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-selling-price",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": false,
+      "width":270,
+      "height":270
+    }
+  },
+  "product-selling-price":{
+    "props":{
+      "blockClass":"sellingPrice"
+    }
+  },
+  "add-to-cart-button":{
+    "props":{
+      "text":"COMPRAR",
+      "blockClass":"btn-buy"
+    }
+  },
+  "slider-layout#shelf":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "blockClass":"products"
+    }
+  },
+  //infocard fake
+  "image#desktop-casamento":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/171053/casamento-banner.png?v=636847326978870000",
+      "maxHeight":220
+    }
+  },
+  //info card real
+  "info-card#desktop":{
+    "props":{
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000",
+      "headline": "Merci ready to go",
+      "subhead": "Conheça os produtos que podem ser<br> personalizados em 3 dias úteis e enviados para todo<br> brasil.",
+      "callToActionMode": "link",
+      "callToActionText": "IR PARA PRONTA ENTREGA",
+      "callToActionUrl": "/",
+      "blockClass": "infoCardMerci",
+      "textAlignment": "center"
+    }
+  },
+  //Campo sobre-nós
+  "flex-layout.col#desktop-about-us":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "image#logoAboutUs",
+      "rich-text#textAboutUs",
+      "flex-layout.row#desktop-form"
+    ]
+  },
+  "image#logoAboutUs":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/merci-logo-marca.png?v=636847351626730000"
+    }
+  },
+  "rich-text#textAboutUs":{
+    "props":{
+      "text":"SOBRE A MARCA"
+    }
+  },
+  //Parte para envio de email ao final do campo "sobre nós"
+  "flex-layout.row#desktop-form":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "image#email-logo",
+      "rich-text#newsletter",
+      //declarando os inputs de texto
+      "form-input.textarea#email",
+      "form-input.textarea#nome",
+      "image#arrow-send"
+    ]
+  },
+  "image#email-logo":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ico-mail.png?v=636845290506470000",
+      "width":50,
+      "height":24
+    }
+  },
+  "rich-text#newsletter":{
+    "props":{
+      "text":"NEWSLETTER"
+    }
+  },
+  "form-input.textarea#email":{
+    "props":{
+      "pointer":"/",
+      "label":"email",
+      "placeholder":"Digite seu e-mail"
+    }
+  },
+  "form-input.textarea#nome":{
+    "props":{
+      "pointer":"/",
+      "label":"nome",
+      "placeholder":"Digite seu nome"
+    }
+  },
+  "image#arrow-send":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/send-button.png"
+    }
+  },
+  "rich-text#siga-nos":{
+    "props":{
+      "text":"SIGA-NOS @merciwithlove",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"imgTitleDesktop"
+    }
+  },
   "responsive-layout.mobile#mobile":{
     "children":[
       "rich-text#mobile",
@@ -131,6 +280,7 @@
       "blockClass":"imgTitleMobile"
     }
   },
+  //quando é mobile os cards mencionado anteriormente viram um slider
   "slider-layout#slider-images":{
     "props":{
       "itemsPerPage": {
@@ -180,151 +330,11 @@
       "blockClass":"imgTitleMobile"
     }
   },
-  "list-context.product-list": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#shelf"]
-  },
-  "product-summary.shelf": {
-    "props":{
-      "blockClass":"shelf"
-    },
-    "children": [
-      "product-summary-image",
-      "product-summary-name",
-      "product-selling-price",
-      "add-to-cart-button"
-    ]
-  },
-  "product-summary-image": {
-    "props": {
-      "showBadge": false,
-      "width":270,
-      "height":270
-    }
-  },
-  "product-selling-price":{
-    "props":{
-      "blockClass":"sellingPrice"
-    }
-  },
-  "add-to-cart-button":{
-    "props":{
-      "text":"COMPRAR",
-      "blockClass":"btn-buy"
-    }
-  },
-  "slider-layout#shelf":{
-    "props":{
-      "itemsPerPage": {
-        "desktop": 3,
-        "tablet": 2,
-        "phone": 2
-      },
-      "blockClass":"products"
-    }
-  },
-  "image#desktop-casamento":{
-    "props":{
-      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/171053/casamento-banner.png?v=636847326978870000",
-      "maxHeight":220
-    }
-  },
   "image#mobile-casamento":{
     "props":{
       "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/171053/casamento-banner.png?v=636847326978870000",
       "maxHeight":220,
       "blockClass":"casamentoMobile"
-    }
-  },
-  "info-card#desktop":{
-    "props":{
-      "isFullModeStyle": true,
-      "textPosition": "left",
-      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000",
-      "headline": "Merci ready to go",
-      "subhead": "Conheça os produtos que podem ser<br> personalizados em 3 dias úteis e enviados para todo<br> brasil.",
-      "callToActionMode": "link",
-      "callToActionText": "IR PARA PRONTA ENTREGA",
-      "callToActionUrl": "/",
-      "blockClass": "infoCardMerci",
-      "textAlignment": "center"
-    }
-  },
-  "rich-text#siga-nos":{
-    "props":{
-      "text":"SIGA-NOS @merciwithlove",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "blockClass":"imgTitleDesktop"
-    }
-  },
-  "flex-layout.col#desktop-about-us":{
-    "props":{
-      "fullWidth":true,
-      "horizontalAlign":"center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
-    },
-    "children":[
-      "image#logoAboutUs",
-      "rich-text#textAboutUs",
-      "flex-layout.row#desktop-form"
-    ]
-  },
-  "image#logoAboutUs":{
-    "props":{
-      "src":"https://merciwithlove.vteximg.com.br/arquivos/merci-logo-marca.png?v=636847351626730000"
-    }
-  },
-  "rich-text#textAboutUs":{
-    "props":{
-      "text":"SOBRE A MARCA"
-    }
-  },
-  "flex-layout.row#desktop-form":{
-    "props":{
-      "fullWidth":true,
-      "horizontalAlign":"center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
-    },
-    "children":[
-      "image#email-logo",
-      "rich-text#newsletter",
-      "form-input.textarea#email",
-      "form-input.textarea#nome",
-      "image#arrow-send"
-    ]
-  },
-  "image#email-logo":{
-    "props":{
-      "src":"https://merciwithlove.vteximg.com.br/arquivos/ico-mail.png?v=636845290506470000",
-      "width":50,
-      "height":24
-    }
-  },
-  "rich-text#newsletter":{
-    "props":{
-      "text":"NEWSLETTER"
-    }
-  },
-  "form-input.textarea#email":{
-    "props":{
-      "pointer":"/",
-      "label":"email",
-      "placeholder":"Digite seu e-mail"
-    }
-  },
-  "form-input.textarea#nome":{
-    "props":{
-      "pointer":"/",
-      "label":"nome",
-      "placeholder":"Digite seu nome"
-    }
-  },
-  "image#arrow-send":{
-    "props":{
-      "src":"https://merciwithlove.vteximg.com.br/arquivos/send-button.png"
     }
   }
 }
