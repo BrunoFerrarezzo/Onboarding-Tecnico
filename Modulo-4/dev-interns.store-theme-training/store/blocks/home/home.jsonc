@@ -1,0 +1,331 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203781/proj-banner-dia-das-m%C3%A3es-23-desktop.jpg?v=638175186774170000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000"
+        },
+        {
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203781/proj-banner-dia-das-m%C3%A3es-23-desktop.jpg?v=638175186774170000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203718/banner-adele-pocket-corrente-mobile.png?v=638168308572900000"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows":"mobileOnly",
+      "fullWidth":true,
+      "blockClass": "carousel"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "responsive-layout.desktop#desktop":{
+    "children":[
+      "rich-text#desktop",
+      "flex-layout.row#desktop-cards",
+      "rich-text#desktop-destaque",
+      "list-context.product-list",
+      "image#desktop-casamento",
+      "info-card#desktop",
+      "rich-text#siga-nos",
+      "info-card#desktop",
+      "flex-layout.col#desktop-about-us"
+    ]
+  },
+  "rich-text#desktop":{
+    "props":{
+      "text":"UM PRESENTE PARA CADA OCASIÃO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"imgTitleDesktop"
+    }
+  },
+  "flex-layout.row#desktop-cards":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "image#bolsas",
+      "image#infantil",
+      "image#acessorios"
+    ]
+  },
+  "image#bolsas":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/187044/minibanner_bolsas.jpg?v=637420421479230000",
+      "blockClass":["imgDesktop"],
+      "maxWidth":400
+    }
+  },
+  "image#infantil":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/187045/minibanner_infantil.jpg?v=637420428447700000",
+      "blockClass":["imgDesktop"],
+      "maxWidth":400
+    }
+  },
+  "image#acessorios":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/187046/minibanner-acessorios copy.JPG.jpg?v=637420429334930000",
+      "blockClass":["imgDesktop"],
+      "maxWidth":400
+    }
+  },
+  "rich-text#desktop-destaque":{
+    "props":{
+      "text":"PRODUTOS EM DESTAQUE",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"imgTitleDesktop"
+    }
+  },
+  "responsive-layout.mobile#mobile":{
+    "children":[
+      "rich-text#mobile",
+      "slider-layout#slider-images",
+      "rich-text#mobile-destaque",
+      "image#mobile-casamento",
+      "info-card#desktop",
+      "rich-text#siga-nos"
+      //"flex-layout.col#mobile-about-us"
+    ]
+  },
+  "rich-text#mobile":{
+    "props":{
+      "text":"UM PRESENTE PARA CADA OCASIÃO",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"imgTitleMobile"
+    }
+  },
+  "slider-layout#slider-images":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"mobileOnly",
+      "fullWidth":true,
+      "autoplay":{
+        "timeout":4000,
+        "stopOnHover":false
+      },
+      "blockClass": "carousel"
+    },
+    "children":[
+      "image#bolsasM",
+      "image#infantilM",
+      "image#acessoriosM"
+    ]
+  },
+  "image#bolsasM":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/187044/minibanner_bolsas.jpg?v=637420421479230000",
+      "blockClass":["imgMobile"]
+    }
+  },
+  "image#infantilM":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/187045/minibanner_infantil.jpg?v=637420428447700000",
+      "blockClass":["imgMobile"]
+    }
+  },
+  "image#acessoriosM":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/187046/minibanner-acessorios copy.JPG.jpg?v=637420429334930000",
+      "blockClass":["imgMobile"]
+    }
+  },
+  "rich-text#mobile-destaque":{
+    "props":{
+      "text":"PRODUTOS EM DESTAQUE",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"imgTitleMobile"
+    }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#shelf"]
+  },
+  "product-summary.shelf": {
+    "props":{
+      "blockClass":"shelf"
+    },
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-selling-price",
+      "add-to-cart-button"
+    ]
+  },
+  "product-summary-image": {
+    "props": {
+      "showBadge": false,
+      "width":270,
+      "height":270
+    }
+  },
+  "product-selling-price":{
+    "props":{
+      "blockClass":"sellingPrice"
+    }
+  },
+  "add-to-cart-button":{
+    "props":{
+      "text":"COMPRAR",
+      "blockClass":"btn-buy"
+    }
+  },
+  "slider-layout#shelf":{
+    "props":{
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "blockClass":"products"
+    }
+  },
+  "image#desktop-casamento":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/171053/casamento-banner.png?v=636847326978870000",
+      "maxHeight":220
+    }
+  },
+  "image#mobile-casamento":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ids/171053/casamento-banner.png?v=636847326978870000",
+      "maxHeight":220,
+      "blockClass":"casamentoMobile"
+    }
+  },
+  "info-card#desktop":{
+    "props":{
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000",
+      "headline": "Merci ready to go",
+      "subhead": "Conheça os produtos que podem ser<br> personalizados em 3 dias úteis e enviados para todo<br> brasil.",
+      "callToActionMode": "link",
+      "callToActionText": "IR PARA PRONTA ENTREGA",
+      "callToActionUrl": "/",
+      "blockClass": "infoCardMerci",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#siga-nos":{
+    "props":{
+      "text":"SIGA-NOS @merciwithlove",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"imgTitleDesktop"
+    }
+  },
+  "flex-layout.col#desktop-about-us":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "image#logoAboutUs",
+      "rich-text#textAboutUs",
+      "flex-layout.row#desktop-form"
+    ]
+  },
+  "image#logoAboutUs":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/merci-logo-marca.png?v=636847351626730000"
+    }
+  },
+  "rich-text#textAboutUs":{
+    "props":{
+      "text":"SOBRE A MARCA"
+    }
+  },
+  "flex-layout.row#desktop-form":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "image#email-logo",
+      "rich-text#newsletter",
+      "form-input.textarea#email",
+      "form-input.textarea#nome",
+      "image#arrow-send"
+    ]
+  },
+  "image#email-logo":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/ico-mail.png?v=636845290506470000",
+      "width":50,
+      "height":24
+    }
+  },
+  "rich-text#newsletter":{
+    "props":{
+      "text":"NEWSLETTER"
+    }
+  },
+  "form-input.textarea#email":{
+    "props":{
+      "pointer":"/",
+      "label":"email",
+      "placeholder":"Digite seu e-mail"
+    }
+  },
+  "form-input.textarea#nome":{
+    "props":{
+      "pointer":"/",
+      "label":"nome",
+      "placeholder":"Digite seu nome"
+    }
+  },
+  "image#arrow-send":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/send-button.png"
+    }
+  }
+}
+   

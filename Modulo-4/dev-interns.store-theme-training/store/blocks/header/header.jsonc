@@ -1,0 +1,296 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "rich-text#header-1",
+      "rich-text#header-2"
+    ],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#header-1":{
+    "props":{
+      "text":"Produtos Personalizados",
+      "textPosition":"RIGHT",
+      "blockClass":["header","h1"]
+    }
+  },
+  "rich-text#header-2":{
+    "props":{
+      "text":"Em até 3x sem juros",
+
+      "textPosition":"LEFT",
+      "blockClass":["header","h2"]
+    }
+  },
+  "flex-layout.row#2-desktop":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "logo#desktop",
+      "flex-layout.col#nav",
+      "flex-layout.col#icons"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/logo@2x.png",
+      "width": "106",
+      "height":"101",
+      "blockClass":"logo"
+    }
+  },
+  "flex-layout.col#nav":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"middle",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"navCol"
+    },
+    "children":[
+      "flex-layout.row#nav"
+    ]
+  },
+  "flex-layout.row#nav":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "rich-text#viagens",
+      "rich-text#paraela",
+      "rich-text#paraele",
+      "rich-text#paraele",
+      "rich-text#infantil",
+      "rich-text#diadia",
+      "rich-text#prontaentrega",
+      "rich-text#sale"
+    ]
+  },
+  "rich-text#viagens":{
+    "props":{
+      "text":"VIAGENS",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#paraela":{
+    "props":{
+      "text":"PARA ELA",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#paraele":{
+    "props":{
+      "text":"PARA ELE",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#infantil":{
+    "props":{
+      "text":"INFANTIL",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#diadia":{
+    "props":{
+      "text":"DIA A DIA",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#prontaentrega":{
+    "props":{
+      "text":"PRONTA ENTREGA",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#sale":{
+    "props":{
+      "text":"SALE",
+      "blockClass":"navItem"
+    }
+  },
+  "flex-layout.col#icons":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"middle",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "flex-layout.row#icons"
+    ]
+  },
+  "flex-layout.row#icons":{
+    "props":{
+      "horizontalAlign":"center",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "logo#search",
+      "logo#profile",
+      "logo#cart"
+    ]
+  },
+  "logo#search": {
+    "props": {
+      "title": "Search",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-search.png",
+      "width": "27",
+      "height":"28",
+      "blockClass":"icons"
+    }
+  },
+  "logo#profile": {
+    "props": {
+      "title": "Profile",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-user.png",
+      "width": "24",
+      "height":"28",
+      "blockClass":"icons"
+    }
+  },
+  "logo#cart": {
+    "props": {
+      "title": "Cart",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-shopping-cart.png",
+      "width": "28",
+      "height":"28",
+      "blockClass":"icons"
+    }
+  }
+  /*
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  }
+  */
+}
