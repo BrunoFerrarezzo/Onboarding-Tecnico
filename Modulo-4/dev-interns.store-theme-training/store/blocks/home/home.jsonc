@@ -56,12 +56,20 @@
       "rich-text#desktop",
       "flex-layout.row#desktop-cards",
       "rich-text#desktop-destaque",
-      "list-context.product-list",
+      "flex-layout.row#slider-shelf",
       "image#desktop-casamento",
       "info-card#desktop",
       "rich-text#siga-nos",
-      "info-card#desktop",
-      "flex-layout.col#desktop-about-us"
+      "flex-layout.row#desktop-about-us"
+
+    ]
+  },
+  "flex-layout.row#slider-shelf":{
+    "props":{
+      "blockClass":"sliderRow"
+    },
+    "children":[
+      "list-context.product-list"
     ]
   },
   "rich-text#desktop":{
@@ -117,17 +125,19 @@
   },
   //carrossel de produtos
   "list-context.product-list": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#shelf-home"],
     "children": ["slider-layout#shelf"]
   },
-  "product-summary.shelf": {
+  "product-summary.shelf#shelf-home": {
     "props":{
       "blockClass":"shelf"
     },
     "children": [
       "product-summary-image",
       "product-summary-name",
-      "product-selling-price",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-installments#summary",
       "add-to-cart-button"
     ]
   },
@@ -171,7 +181,7 @@
     "props":{
       "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000",
+      "imageUrl": "https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3)",
       "headline": "Merci ready to go",
       "subhead": "Conheça os produtos que podem ser<br> personalizados em 3 dias úteis e enviados para todo<br> brasil.",
       "callToActionMode": "link",
@@ -182,6 +192,11 @@
     }
   },
   //Campo sobre-nós
+  "flex-layout.row#desktop-about-us":{
+    "children":[
+      "flex-layout.col#desktop-about-us"
+    ]
+  },
   "flex-layout.col#desktop-about-us":{
     "props":{
       "fullWidth":true,
@@ -216,10 +231,8 @@
     "children":[
       "image#email-logo",
       "rich-text#newsletter",
-      //declarando os inputs de texto
-      "form-input.textarea#email",
-      "form-input.textarea#nome",
-      "image#arrow-send"
+      "newsletter-form"
+      //"image#arrow-send"
     ]
   },
   "image#email-logo":{
@@ -234,25 +247,34 @@
       "text":"NEWSLETTER"
     }
   },
-  "form-input.textarea#email":{
+  "newsletter-form":{
     "props":{
-      "pointer":"/",
-      "label":"email",
-      "placeholder":"Digite seu e-mail"
+      "blockClass":"formulario-newsletter"
+    },
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ]
+  },
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText":"Digite seu e-mail"
     }
   },
-  "form-input.textarea#nome":{
+  "newsletter-input-name":{
     "props":{
-      "pointer":"/",
-      "label":"nome",
-      "placeholder":"Digite seu nome"
+      "placeholderText":"Digite seu nome"
     }
   },
-  "image#arrow-send":{
+  "newsletter-submit":{
+
+  },
+  /*"image#arrow-send":{
     "props":{
       "src":"https://merciwithlove.vteximg.com.br/arquivos/send-button.png"
     }
-  },
+  },*/
   "rich-text#siga-nos":{
     "props":{
       "text":"SIGA-NOS @merciwithlove",
@@ -261,6 +283,7 @@
       "blockClass":"imgTitleDesktop"
     }
   },
+  //MOBILE
   "responsive-layout.mobile#mobile":{
     "children":[
       "rich-text#mobile",

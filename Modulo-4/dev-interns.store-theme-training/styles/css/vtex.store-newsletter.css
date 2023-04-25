@@ -1,0 +1,14 @@
+.newsletterForm--formulario-newsletter{
+    display: flex;
+    flex-direction: row;
+}
+.newsletterForm--formulario-newsletter :global(.vtex-button){
+    color: transparent;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    border: none;
+    background: url(https://merciwithlove.vteximg.com.br/arquivos/send-button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

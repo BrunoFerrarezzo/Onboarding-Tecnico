@@ -43,15 +43,44 @@
 .image {
   border-radius: 0.25rem;
 }
-.element{
+.element--shelf{
   display: block;
   box-sizing: border-box;
   max-width: 395px;
-  margin: 0 auto;
+  margin: 0 !important;
   width: 100%;
-  height: 466;
+  height: 466px;
   padding: 23px 29px;
 }
-.element:hover{
+.element--shelf:hover{
   border: 1px solid #73708b;
+}
+/*Modificando botão do carrosel de produtos*/
+.element--shelf :global(.vtex-button){
+  display: inline-block;
+  width: 100%;
+  height: 47px;
+  line-height: 47px;
+  background-color: #ffc644;
+  border: 1px solid #ffc644;
+  font-size: 17.8px;
+  font-weight: bold;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-radius: 0;
+}
+.clearLink--shelf{
+  display: block;
+  width: 100% !important;
+}
+.containerNormal--shelf{
+  margin:0;
+  width: 100% !important;
+  max-width: max-content !important;
+}
+.container--shelf{
+  width: 100% !important;
 }
