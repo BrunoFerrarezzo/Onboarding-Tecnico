@@ -225,6 +225,7 @@
     "props":{
       "fullWidth":true,
       "horizontalAlign":"center",
+      "verticalAlign":"center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true
     },
@@ -259,12 +260,14 @@
   },
   "newsletter-input-email":{
     "props":{
-      "placeholderText":"Digite seu e-mail"
+      "placeholderText":"Digite seu e-mail",
+      "blockClass":"inputNewsletter"
     }
   },
   "newsletter-input-name":{
     "props":{
-      "placeholderText":"Digite seu nome"
+      "placeholderText":"Digite seu nome",
+      "blockClass":"inputNewsletter"
     }
   },
   "newsletter-submit":{

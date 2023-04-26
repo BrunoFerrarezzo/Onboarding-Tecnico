@@ -108,3 +108,26 @@
 .flexRowContent{
   margin-bottom: 0px;
 }
+.flexRowContent--menu-row{
+  margin: 0;
+  padding:24px 54px !important;
+  background: #73708b;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+}
+.flexRow--paymentsRow{
+  padding-top: 22px;
+  background-color: #f0f0f0;
+}
+.flexRowContent--paymentsRow{
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.flexCol--footerCol{
+  background-color: #f0f0f0;
+}
+.flexRowContent--poweredByRow{
+  padding: 20px 0;
+}

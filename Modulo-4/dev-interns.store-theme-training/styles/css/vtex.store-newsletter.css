@@ -1,14 +1,38 @@
 .newsletterForm--formulario-newsletter{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .newsletterForm--formulario-newsletter :global(.vtex-button){
     color: transparent;
-    width: 31px;
-    height: 31px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: transparent;
     border-radius: 50%;
-    border: none;
     background: url(https://merciwithlove.vteximg.com.br/arquivos/send-button.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+}
+.newsletterForm--formulario-newsletter :global(.vtex-button__label){
+    padding: 0 !important;
+}
+.emailInputContainer--inputNewsletter{
+    display: inline-block;
+    width: 100%;
+    border: 0px;
+    border-bottom: 3px solid #f0f0f0;
+    outline: 0;
+    background: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #73708b;
+    margin-top: 15px;
 }

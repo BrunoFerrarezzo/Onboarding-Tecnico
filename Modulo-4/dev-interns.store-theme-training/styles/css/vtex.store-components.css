@@ -171,3 +171,32 @@
   align-self: center;
   margin-left: -40px;
 }
+
+.imageElement--visa,.imageElement--mastercard,.imageElement--elo,.imageElement--dinners,.imageElement--american{
+  margin: 0 10px;
+}
+
+.imageElement--visa{
+  width: 50px;
+  height: 16px;
+  align-self: center;
+}
+.imageElement--mastercard{
+  width: 32px;
+  height: 26px;
+}
+.imageElement--elo{
+  width: 39px;
+  height: 20px;
+}
+.imageElement--dinners{
+  width: 29px;
+  height: 25px;
+}
+.imageElement--american{
+  width: 27px;
+  height: 26px;
+}
+.imageElement--poweredByImages{
+  margin: 0 10px;
+}

@@ -122,4 +122,32 @@
     justify-content: center;
     align-items: center;
   }
+  .paragraph--titleRich{
+    margin:0;
+    margin-bottom: 15px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 35px;
+    color: #fff;
+    min-width: 202.5px;
+    padding: 0 15px;
+  }
+  .paragraph--textRich, .link--textRich{
+    margin:0;
+    min-width: 202.5px;
+    line-height: 30px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .paragraph--footer3Text{
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #73708b;
+    font-weight: normal;
+  }
 }
