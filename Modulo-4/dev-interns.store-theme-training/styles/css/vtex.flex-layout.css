@@ -131,3 +131,30 @@
 .flexRowContent--poweredByRow{
   padding: 20px 0;
 }
+.flexRow--desktopForm{
+  padding: 25px 20px;
+  border-top-left-radius: 350px;
+  border-top-right-radius: 350px;
+  box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, .13);
+  background: #fff;
+  max-width: 1240px;
+  width: 100vw;
+}
+.flexRowContent--desktopForm{
+  width: 100w !important;
+}
+.flexCol--aboutUs{
+  background-color: #f0f0f0;
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.flexRow--mobileForm{
+  width: 100vw !important;
+}
+.flexRowContent--mobileForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

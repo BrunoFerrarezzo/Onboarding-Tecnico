@@ -130,6 +130,8 @@
 }
 .container{
   margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .infoCardContainer--infoCardMerci{
   background-image: url("https://merciwithlove.vteximg.com.br/arquivos/ids/176439/Ready-to-go-Merci-With-Love%20(3).png?v=637045447182430000");
@@ -199,4 +201,8 @@
 }
 .imageElement--poweredByImages{
   margin: 0 10px;
+}
+.imageElement--imageSend{
+  align-self: center;
+  justify-self: flex-start;
 }

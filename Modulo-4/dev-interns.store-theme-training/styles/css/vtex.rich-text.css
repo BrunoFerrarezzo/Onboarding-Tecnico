@@ -150,4 +150,38 @@
     color: #73708b;
     font-weight: normal;
   }
+  .paragraph--newsletterText{
+    margin: 0;
+    margin-left: 9px;
+    margin-right: 80px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 2.5px;
+    color: #73708b;
+    text-transform: uppercase;
+  }
+  .container--newsletterText{
+    align-items: center;
+  }
+  .paragraph--paragraphDesktop{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: center;
+    color: #73708b;
+    margin: 0;
+    margin-bottom: 151px;
+  }
+  .paragraph--aboutUsDesktop{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #73708b;
+  }
 }

@@ -202,10 +202,12 @@
       "fullWidth":true,
       "horizontalAlign":"center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass":"aboutUs"
     },
     "children":[
       "image#logoAboutUs",
+      "rich-text#textAboutUsTitle",
       "rich-text#textAboutUs",
       "flex-layout.row#desktop-form"
     ]
@@ -215,37 +217,46 @@
       "src":"https://merciwithlove.vteximg.com.br/arquivos/merci-logo-marca.png?v=636847351626730000"
     }
   },
+  "rich-text#textAboutUsTitle":{
+    "props":{
+      "text":"SOBRE A MARCA",
+      "blockClass":"aboutUsDesktop"
+    }
+  },
   "rich-text#textAboutUs":{
     "props":{
-      "text":"SOBRE A MARCA"
+      "text":"A MerciWithLove é uma marca de artigos de couro 100% natural em que tudo pode ser personalizado de acordo com o desejo de cada cliente.",
+      "blockClass":"paragraphDesktop"
     }
   },
   //Parte para envio de email ao final do campo "sobre nós"
   "flex-layout.row#desktop-form":{
     "props":{
       "fullWidth":true,
-      "horizontalAlign":"center",
+      "horizontalAlign":"left",
       "verticalAlign":"center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass":"desktopForm"
     },
     "children":[
       "image#email-logo",
       "rich-text#newsletter",
       "newsletter-form"
-      //"image#arrow-send"
     ]
   },
   "image#email-logo":{
     "props":{
       "src":"https://merciwithlove.vteximg.com.br/arquivos/ico-mail.png?v=636845290506470000",
       "width":50,
-      "height":24
+      "height":24,
+      "blockClass":"imageSend"
     }
   },
   "rich-text#newsletter":{
     "props":{
-      "text":"NEWSLETTER"
+      "text":"NEWSLETTER",
+      "blockClass":"newsletterText"
     }
   },
   "newsletter-form":{
@@ -273,11 +284,6 @@
   "newsletter-submit":{
 
   },
-  /*"image#arrow-send":{
-    "props":{
-      "src":"https://merciwithlove.vteximg.com.br/arquivos/send-button.png"
-    }
-  },*/
   "rich-text#siga-nos":{
     "props":{
       "text":"SIGA-NOS @merciwithlove",
@@ -294,8 +300,8 @@
       "rich-text#mobile-destaque",
       "image#mobile-casamento",
       "info-card#desktop",
-      "rich-text#siga-nos"
-      //"flex-layout.col#mobile-about-us"
+      "rich-text#siga-nos",
+      "flex-layout.row#mobile-about-us"
     ]
   },
   "rich-text#mobile":{
@@ -362,6 +368,76 @@
       "maxHeight":220,
       "blockClass":"casamentoMobile"
     }
+  },
+  "flex-layout.row#mobile-about-us":{
+    "children":[
+      "flex-layout.col#mobile-about-us"
+    ]
+  },
+  "flex-layout.col#mobile-about-us":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass":"aboutUs"
+    },
+    "children":[
+      "image#logoAboutUs",
+      "rich-text#textAboutUsTitle",
+      "rich-text#textAboutUs",
+      "flex-layout.row#mobile-form"
+    ]
+  },
+  "flex-layout.row#mobile-form":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass":"mobileForm"
+    },
+    "children":[
+      "flex-layout.row#mobile-form-icon",
+      "newsletter-form#mobileForm"
+    ]
+  },
+  "flex-layout.row#mobile-form-icon":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "image#email-logo",
+      "rich-text#newsletter"
+    ]
+  },
+  "newsletter-form#mobileForm":{
+    "props":{
+      "blockClass":"formulario-newsletter-mobile"
+    },
+    "children": [
+      "newsletter-input-email#mobileForm",
+      "newsletter-input-name#mobileForm",
+      "newsletter-submit#mobileForm"
+    ]
+  },
+  "newsletter-input-email#mobileForm":{
+    "props":{
+      "placeholderText":"Digite seu e-mail",
+      "blockClass":"inputNewsletter-mobile"
+    }
+  },
+  "newsletter-input-name#mobileForm":{
+    "props":{
+      "placeholderText":"Digite seu nome",
+      "blockClass":"inputNewsletter-mobile"
+    }
+  },
+  "newsletter-submit#mobileForm":{
+
   }
 }
    
