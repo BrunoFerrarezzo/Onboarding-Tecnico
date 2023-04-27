@@ -1,0 +1,192 @@
+{
+  //Fazendo o cabeçalho
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-desktop"
+    ]
+  },
+
+  "flex-layout.row#1-desktop": {
+    "children": [
+      "rich-text#header-1",
+      "rich-text#header-2"
+    ],
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign":"center"
+    }
+  },
+  //"Rodapé" superior
+  "rich-text#header-1":{
+    "props":{
+      "text":"Produtos Personalizados",
+      "textPosition":"RIGHT",
+      "blockClass":["header","h1"]
+    }
+  },
+  "rich-text#header-2":{
+    "props":{
+      "text":"Em até 3x sem juros",
+
+      "textPosition":"LEFT",
+      "blockClass":["header","h2"]
+    }
+  },
+  //estruturando elementos do cabeçalho
+  "flex-layout.row#2-desktop":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children":[
+      "logo#desktop",
+      "flex-layout.col#nav",
+      "flex-layout.col#icons"
+    ]
+  },
+  //logo
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/logo@2x.png",
+      "width": "106",
+      "height":"101",
+      "blockClass":"logo"
+    }
+  },
+  //Abas de navegação
+  "flex-layout.col#nav":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"middle",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"navCol"
+    },
+    "children":[
+      "flex-layout.row#nav"
+    ]
+  },
+  "flex-layout.row#nav":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "rich-text#viagens",
+      "rich-text#paraela",
+      "rich-text#paraele",
+      "rich-text#paraele",
+      "rich-text#infantil",
+      "rich-text#diadia",
+      "rich-text#prontaentrega",
+      "rich-text#sale"
+    ]
+  },
+  "rich-text#viagens":{
+    "props":{
+      "text":"VIAGENS",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#paraela":{
+    "props":{
+      "text":"PARA ELA",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#paraele":{
+    "props":{
+      "text":"PARA ELE",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#infantil":{
+    "props":{
+      "text":"INFANTIL",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#diadia":{
+    "props":{
+      "text":"DIA A DIA",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#prontaentrega":{
+    "props":{
+      "text":"PRONTA ENTREGA",
+      "blockClass":"navItem"
+    }
+  },
+  "rich-text#sale":{
+    "props":{
+      "text":"SALE",
+      "blockClass":"navItem"
+    }
+  },
+  //icones à direita (perfil,carrinho,pesquisa)
+  "flex-layout.col#icons":{
+    "props":{
+      "horizontalAlign":"center",
+      "verticalAlign":"middle",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "flex-layout.row#icons"
+    ]
+  },
+  "flex-layout.row#icons":{
+    "props":{
+      "horizontalAlign":"center",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "logo#search",
+      "logo#profile",
+      "logo#cart"
+    ]
+  },
+  "logo#search": {
+    "props": {
+      "title": "Search",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-search.png",
+      "width": "27",
+      "height":"28",
+      "blockClass":"icons"
+    }
+  },
+  "logo#profile": {
+    "props": {
+      "title": "Profile",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-user.png",
+      "width": "24",
+      "height":"28",
+      "blockClass":"icons"
+    }
+  },
+  "logo#cart": {
+    "props": {
+      "title": "Cart",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-shopping-cart.png",
+      "width": "28",
+      "height":"28",
+      "blockClass":"icons"
+    }
+  }
+}

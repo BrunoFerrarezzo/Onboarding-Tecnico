@@ -1,0 +1,22 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+/*.socialNetworksContaine{
+
+}*/ 
+/*.socialNetworkLink{
+
+}*/ 
+.socialNetworkImage{
+  color: white;
+  background-color: white;
+  border-radius: 50%;
+}

@@ -1,0 +1,27 @@
+.productBrandName--summaryListDesktop {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0067C7;
+  font-size: .875rem;
+}
+
+.productBrandName--summaryListMobile {
+  text-decoration: none;
+  color: #0067C7;
+  font-size: .875rem;
+}
+.imageElement--imgDesktop{
+  width: 387px;
+  height: 400px;
+  padding: 0px 20px;
+}
+.imageElement--imgMobile{
+  width: 100%;
+  max-width: 694px;
+  height: 400px;
+  padding: 0px 20px;
+  /*background-attachment: fixed;*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

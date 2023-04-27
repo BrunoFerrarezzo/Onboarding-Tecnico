@@ -1,0 +1,341 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-2-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
+    ]
+  },
+  "flex-layout.row#footer-1-desktop": {
+    "children": [
+      "flex-layout.col#atendimento",
+      "flex-layout.col#institucional",
+      "flex-layout.col#ajuda-suporte",
+      "flex-layout.col#atelie",
+      "flex-layout.col#enxoval"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true
+    }
+  },
+  "flex-layout.col#atendimento":{
+    "props":{
+
+      "verticalAlign":"center"
+    },
+    "children":[
+      "rich-text#atendimento-title",
+      "rich-text#atendimento-text",
+      "rich-text#social-network",
+      "social-networks"
+    ]
+
+  },
+  "rich-text#atendimento-title":{
+    "props":{
+      "text":"Atendimento",
+      "blockClass":"titleRich"
+    }
+  },
+  "rich-text#atendimento-text":{
+    "props":{
+      "text":"Telefone: +55 31 3517-8129<br>Whatsapp: +55 31 99169-7664<br>Email: contato@merciwithlove.com.br",
+      "blockClass":"textRich"
+    }
+  },
+  "rich-text#social-network":{
+    "props":{
+      "text":"Redes Sociais",
+      "blockClass":"titleRich"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        },
+        {
+          "name": "Pinterest",
+          "url": "https://twitter.com/vtexonline"
+        }
+      ]
+    }
+  },
+  "flex-layout.col#institucional":{
+    "props":{
+      "fullWidth":true,
+      "verticalAlign":"top"
+    },
+    "children":[
+      "rich-text#institucional-title",
+      "rich-text#institucional-text"
+    ]
+  },
+  "rich-text#institucional-title":{
+    "props":{
+      "text":"Institucional",
+      "blockClass":"titleRich"
+    }
+  },
+  "rich-text#institucional-text":{
+    "props":{
+      "text":"Quem Somos<br>Clube Merci<br>Fale Conosco",
+      "blockClass":"textRich"
+    }
+  },
+  "flex-layout.col#ajuda-suporte":{
+    "props":{
+      "fullWidth":true,
+      "verticalAlign":"top"
+    },
+    "children":[
+      "rich-text#suporte-title",
+      "rich-text#suporte-text"
+    ]
+  },
+  "rich-text#suporte-title":{
+    "props":{
+      "text":"Ajuda e suporte",
+      "blockClass":"titleRich"
+    }
+  },
+  "rich-text#suporte-text":{
+    "props":{
+      "text":"Trocas e Devoluções<br>Politica de privacidade<br>Politica de Entrega",
+      "blockClass":"textRich"
+    }
+  },
+  "flex-layout.col#atelie":{
+    "props":{
+      "fullWidth":true,
+      "verticalAlign":"top"
+    },
+    "children":[
+      "rich-text#atelie-title",
+      "rich-text#atelie-text"
+    ]
+  },
+  "rich-text#atelie-title":{
+    "props":{
+      "text":"Nosso Ateliê BH",
+      "blockClass":"titleRich"
+    }
+  },
+  "rich-text#atelie-text":{
+    "props":{
+      "text":"Rua Ministro Orozimbo Nonato nº 102, sala 1104, Nova Lima/MG<br>CEP: 34006-053<br>Segunda-Sexta: 10.00 - 19.00<br>Sábado: 10.00 - 14.00<br>Domingo: Fechado",
+      "blockClass":"textRich"
+    }
+  },
+  "flex-layout.col#enxoval":{
+    "props":{
+      "fullWidth":true,
+      "verticalAlign":"top"
+    },
+    "children":[
+      "rich-text#enxoval-title",
+      "rich-text#enxoval-text"
+    ]
+  },
+  "rich-text#enxoval-title":{
+    "props":{
+      "text":"Enxoval Merci",
+      "blockClass":"titleRich"
+    }
+  },
+  "rich-text#enxoval-text":{
+    "props":{
+      "text":"Conheça mais formas de personalizar o seu enxoval Merci",
+      "blockClass":"textRich"
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    
+    "children": [
+      "flex-layout.row#payment-methods"
+    ],
+    "props":{
+      "fullWidth":true
+    }
+  },
+  "flex-layout.row#payment-methods": {
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true,
+      "blockClass":"paymentsRow"
+    },
+    "children":[
+      "image#visa",
+      "image#mastercard",
+      "image#elo",
+      "image#dinners",
+      "image#american"
+    ]
+  },
+  "image#visa":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/icone-visa.png?v=636845296112970000",
+      "blockClass":"visa"
+    }
+  },
+  "image#mastercard":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/icone-master.png?v=636845295859630000",
+      "blockClass":"mastercard"
+    }
+  },
+  "image#elo":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/icone-elo.png?v=636845295027170000",
+      "blockClass":"elo"
+    }
+  },
+  "image#dinners":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/icone-diners.png?v=636845292218770000",
+      "blockClass":"dinners"
+    }
+  },
+  "image#american":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/icone-american.png?v=636845290941700000",
+      "blockClass":"american"
+    }
+  },
+  "flex-layout.row#footer-3-desktop": {
+    "children": [
+      "flex-layout.col#footer-3-desktop"
+    ],
+    "props":{
+      "fullWidth":true
+    }
+  },
+  "flex-layout.col#footer-3-desktop":{
+    "children":[
+      "rich-text#all-rights",
+      "rich-text#endereco",
+      "rich-text#vedada-prod"
+    ],
+    "props":{
+      "fullWidth":true,
+      "blockClass":"footerCol"
+    }
+  },
+  "rich-text#all-rights":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"© 2016 , Merci with Love - Todos os direitos reservados",
+      "blockClass":"footer3Text"
+    }
+  },
+  "rich-text#endereco":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Rua Ministro Orozimbo Nonato nº 102, sala 1104 - Nova Lima/MG | CEP: 34006-053 | CNPJ: 22.663.945/0001-26 | Telefone: (31) 3517-8129",
+      "blockClass":"footer3Text"
+    }
+  },
+  "rich-text#vedada-prod":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Todas as marcas e suas imagens são de propriedade de seus respectivos donos. É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização.",
+      "blockClass":"footer3Text"
+    }
+  },
+  "flex-layout.row#footer-4-desktop":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "blockClass":"poweredByRow"
+    },
+    "children":[
+      "image#B2U",
+      "image#acct",
+      "image#vtex"
+    ]
+  },
+  "image#B2U":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/logo-b2u.png?v=637106441517970000",
+      "blockClass":"poweredByImages"
+    }
+  },
+  "image#acct":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/logo-acct.png?v=636849882457200000",
+      "blockClass":"poweredByImages"
+    }
+  },
+  "image#vtex":{
+    "props":{
+      "src":"https://merciwithlove.vteximg.com.br/arquivos/logo-vtex-footer.png?v=636845298025900000",
+      "blockClass":"poweredByImages"
+    }
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-footer-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+  "flex-layout.row#2-footer-mobile": {
+    "children": ["flex-layout.col#footer-1-mobile"],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  }
+}

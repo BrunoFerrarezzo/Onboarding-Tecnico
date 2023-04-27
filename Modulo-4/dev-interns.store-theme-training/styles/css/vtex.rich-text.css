@@ -1,0 +1,187 @@
+.container--deals {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+.container--shelfTitle {
+  color: #727273;
+  justify-content: center;
+  text-align: center;
+}
+
+.headingLevel2--shelfTitle {
+  font-weight: 200;
+}
+
+.container--deals .paragraph {
+  margin: 0;
+}
+
+.container--link {
+  justify-content: center;
+}
+
+.container--question {
+  justify-content: center;
+}
+
+.container--question .paragraph {
+  text-align: center;
+  max-width: 540px;
+  margin: 0 16px;
+  padding-top: 120px;
+  color: #03034E;
+}
+
+.container--question .strong {
+  font-size: 32px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.container--link .paragraph {
+  text-align: center;
+  max-width: 540px;
+  padding-top: 36px;
+  padding-bottom: 84px;
+  color: #03034E;
+}
+
+.container--link .strong {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.container--link .link {
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 300;
+  color: #03034E;
+}
+
+.container--title {
+  color: #03034E;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 640px) {
+  .container--question .strong {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+
+  .container--about {
+    max-width: 85%;
+  }
+
+  .container--title {
+    color: #03034E;
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 60%;
+  }
+
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+  .container--header{
+    background-color: #73708B;
+    height: 22px;
+    align-items: center;
+  }
+  .wrapper--h1{
+    padding-right: 10%;
+  }
+  .wrapper--h2{
+    padding-left: 10%;
+  }
+  .paragraph--header{
+    color: #ffffff;
+
+    font-family: Montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    align-items: center;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  .paragraph--navItem{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.14;
+    color: #404040;
+  }
+  .wrapper--navItem{
+    margin: 0;
+    padding: 0 7px;
+    justify-content: center;
+    align-items: center;
+  }
+  .paragraph--titleRich{
+    margin:0;
+    margin-bottom: 15px;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 35px;
+    color: #fff;
+    min-width: 202.5px;
+    padding: 0 15px;
+  }
+  .paragraph--textRich, .link--textRich{
+    margin:0;
+    min-width: 202.5px;
+    line-height: 30px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+  .paragraph--footer3Text{
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: #73708b;
+    font-weight: normal;
+  }
+  .paragraph--newsletterText{
+    margin: 0;
+    margin-left: 9px;
+    margin-right: 80px;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.6;
+    letter-spacing: 2.5px;
+    color: #73708b;
+    text-transform: uppercase;
+  }
+  .container--newsletterText{
+    align-items: center;
+  }
+  .paragraph--paragraphDesktop{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: center;
+    color: #73708b;
+    margin: 0;
+    margin-bottom: 151px;
+  }
+  .paragraph--aboutUsDesktop{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #73708b;
+  }
+}

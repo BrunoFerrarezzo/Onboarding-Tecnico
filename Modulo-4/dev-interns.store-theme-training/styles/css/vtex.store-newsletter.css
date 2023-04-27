@@ -1,0 +1,82 @@
+.newsletterForm--formulario-newsletter{
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.newsletterForm--formulario-newsletter :global(.vtex-button){
+    color: transparent;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: transparent;
+    border-radius: 50%;
+    background: url(https://merciwithlove.vteximg.com.br/arquivos/send-button.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.newsletterForm--formulario-newsletter :global(.vtex-button__label){
+    padding: 0 !important;
+}
+.emailInputContainer--inputNewsletter :global(.vtex-input-prefix__group){
+    border: none;
+    display: inline-block;
+    width: 100%;
+    min-width: 304px;
+    border-bottom: 3px solid #f0f0f0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #73708b;
+    margin-top: 15px;
+    margin-right: 30px;
+    text-align: left;
+}
+.nameInputContainer--inputNewsletter :global(.vtex-input-prefix__group){
+    border: none;
+    display: inline-block;
+    width: 100%;
+    min-width: 304px;
+    border-bottom: 3px solid #f0f0f0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #73708b;
+    margin-top: 15px;
+    text-align: left;
+}
+.emailInputContainer--inputNewsletter-mobile :global(.vtex-input-prefix__group){
+    display: inline-block;
+    min-width: 385px;
+    border: 1px solid #f0f0f0;
+    height: 33px !important;
+    text-align: center;
+    margin-top: 4px !important;
+    border-radius: 0;
+}
+.newsletterForm--formulario-newsletter-mobile :global(.vtex-button){
+    padding: 0 !important;
+    min-width: 385px;
+    margin-top: 8px;
+    height: 33px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 33px;
+    color: #73708b;
+    letter-spacing: .15em;
+    background: white;
+    border: 1px solid;
+    border-radius: 0;
+    overflow: hidden;
+}
