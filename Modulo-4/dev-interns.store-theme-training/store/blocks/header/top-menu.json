@@ -1,43 +1,270 @@
 {
-  "vtex.menu@2.x:menu#websites": {
+  "vtex.menu@2.x:menu#viagens": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
     "children": [
-      "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#viagens"
     ]
   },
-  "menu-item#shop": {
+  "menu-item#viagens": {
     "props": {
-      "id": "menu-item-shop",
+      "id": "menu-item-custom-sale",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
         "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#institutional": {
-    "children": [
-      "menu-item#vtex-website"
+        "noFollow": true,
+        "tagTitle": "viagens",
+        "text": "VIAGENS"
+      },
+      "blockClass":"menuViagens"
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#viagens"
     ]
   },
-  "menu-item#vtex-website": {
+  "vtex.menu@2.x:submenu#viagens": {
     "props": {
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "visit vtex.com"
-      }
+      "width": "100%",
+      "blockClass":"menuRow"
+    },
+    "children": [
+      "flex-layout.row#viagens-row"
+    ]
+  },
+  "flex-layout.row#viagens-row":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuRow"
+    },
+    "children":[
+      "flex-layout.col#viagens-col1",
+      "flex-layout.col#viagens-col2"
+    ]
+  },
+
+  "flex-layout.col#viagens-col1":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuCol1"
+    },
+    "children":[
+      "image#feminino",
+      "image#masculino"
+    ]
+  },
+  "image#feminino":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagemm_femino.jpg?v=637099714696630000",
+      "maxHeight": 191,
+      "maxWidth": 286,
+      "blockClass":"menuImage"
+    }
+  },
+  "image#masculino":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/Viagem_masculino.jpg?v=637099714687130000",
+      "maxHeight": 191,
+      "maxWidth": 286,
+      "blockClass":"menuImage"
+    }
+  },
+
+  "flex-layout.col#viagens-col2":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuCol2"
+    },
+    "children":[
+      "flex-layout.row#viagens-row1",
+      "flex-layout.row#viagens-row2",
+      "flex-layout.row#viagens-row3"
+    ]
+  },
+  "flex-layout.row#viagens-row1":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "rich-text#feminino-title"
+    ]
+  },
+  "rich-text#feminino-title":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"FEMININO",
+      "blockClass":"menuTitle"
+    }
+  },
+  "flex-layout.row#viagens-row2":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "flex-layout.col#carteira",
+      "flex-layout.col#passaporte",
+      "flex-layout.col#joias",
+      "flex-layout.col#malas",
+      "flex-layout.col#necessaires"
+    ]
+  },
+
+  "flex-layout.col#carteira":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuItems"
+    },
+    "children":[
+      "image#carteira",
+      "rich-text#carteira"
+    ]
+  },
+  "image#carteira":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-carteira-fem.jpg?v=637112447330800000",
+      "maxHeight": 123,
+      "maxWidth": 123
+    }
+  },
+  "rich-text#carteira":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Carteira",
+      "blockClass":"menuImageDescription"
+    }
+  },
+  "flex-layout.col#passaporte":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuItems"
+    },
+    "children":[
+      "image#passaporte",
+      "rich-text#passaporte"
+    ]
+  },
+  "image#passaporte":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-passaporte-fem.jpg?v=637112447410830000",
+      "maxHeight": 123,
+      "maxWidth": 123
+    }
+  },
+  "rich-text#passaporte":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Passaporte",
+      "blockClass":"menuImageDescription"
+    }
+  },
+  "flex-layout.col#joias":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuItems"
+    },
+    "children":[
+      "image#joias",
+      "rich-text#joias"
+    ]
+  },
+  "image#joias":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-porta-joias-fem.jpg?v=637112447430830000",
+      "maxHeight": 123,
+      "maxWidth": 123
+    }
+  },
+  "rich-text#joias":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Porta jóias",
+      "blockClass":"menuImageDescription"
+    }
+  },
+  "flex-layout.col#malas":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuItems"
+    },
+    "children":[
+      "image#malas",
+      "rich-text#malas"
+    ]
+  },
+  "image#malas":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/viagem-tag-fem.jpg?v=637112447440930000",
+      "maxHeight": 123,
+      "maxWidth": 123
+    }
+  },
+  "rich-text#malas":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Tag de malas",
+      "blockClass":"menuImageDescription"
+    }
+  },
+  "flex-layout.col#necessaires":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"menuItems"
+    },
+    "children":[
+      "image#necessaires",
+      "rich-text#necessaires"
+    ]
+  },
+  "image#necessaires":{
+    "props":{
+      "src": "https://merciwithlove.vteximg.com.br/arquivos/nec-menu.jpg?v=637189290494500000",
+      "maxHeight": 123,
+      "maxWidth": 123
+    }
+  },
+  "rich-text#necessaires":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Necessaires",
+      "blockClass":"menuImageDescription"
+    }
+  },
+
+
+  "flex-layout.row#viagens-row3":{
+    "props":{
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true
+    },
+    "children":[
+      "rich-text#monte-seu-kit"
+    ]
+  },
+  "rich-text#monte-seu-kit":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text":"Monte o seu Kit",
+      "blockClass":"menuBottomLink"
     }
   }
 }

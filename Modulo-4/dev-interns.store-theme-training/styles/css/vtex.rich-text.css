@@ -143,13 +143,6 @@
     text-decoration: none;
     padding: 0 15px;
   }
-  .paragraph--footer3Text{
-    margin: 0 0 5px 0;
-    font-size: 14px;
-    line-height: 19px;
-    color: #73708b;
-    font-weight: normal;
-  }
   .paragraph--newsletterText{
     margin: 0;
     margin-left: 9px;
@@ -164,24 +157,128 @@
   .container--newsletterText{
     align-items: center;
   }
-  .paragraph--paragraphDesktop{
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.79;
-    letter-spacing: normal;
-    text-align: center;
-    color: #73708b;
-    margin: 0;
-    margin-bottom: 151px;
-  }
-  .paragraph--aboutUsDesktop{
-    margin: 0;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #73708b;
-  }
+}
+.paragraph--footer3Text{
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: #73708b;
+  letter-spacing: .042em;
+  font-weight: normal;
+}
+.paragraph--paragraphDesktop{
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  text-align: center;
+  color: #73708b;
+  margin: 0;
+  margin-bottom: 151px;
+}
+.paragraph--aboutUsDesktop{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #73708b;
+}
+.paragraph--menuHamburguer{
+  margin: 0;
+  height: 28px;
+  width: 20px;
+  color: #73708b;
+  text-align: center;
+  transform: rotate(90deg);
+  font-size:30px;
+  justify-self: flex-start;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.paragraph--paragraphMobile{
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.79;
+  letter-spacing: normal;
+  text-align: center;
+  color: #73708b;
+  margin: 0;
+  margin-bottom: 50px;
+  width: 439px;
+}
+.paragraph--aboutUsMobile{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #73708b;
+}
+.paragraph--formLogoMobile{
+  margin: 0 0 0 9px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 2.5px;
+  color: #73708b;
+}
+.paragraph--titleRichMobile{
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 35px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.paragraph--menuPlus{
+  margin: 0;
+  font-size: 23px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 35px;
+  cursor: pointer;
+}
+.paragraph--titleRichMobileNetworks{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 35px;
+  margin: 10px 0;
+}
+.paragraph--menuTitle{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #73708b;
+}
+.paragraph--menuImageDescription{
+  color: #73708b;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.14;
+}
+.paragraph--menuBottomLink{
+  margin-top: 50px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: #404040;
+  text-decoration: underline;
 }

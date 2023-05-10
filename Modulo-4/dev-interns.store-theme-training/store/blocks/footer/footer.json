@@ -300,42 +300,174 @@
   },
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
+      "flex-layout.row#footer-1-mobile",
+      "flex-layout.row#footer-2-mobile",
+      "flex-layout.row#footer-3-mobile",
+      "flex-layout.row#footer-4-mobile"
     ]
   },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
+  "flex-layout.row#footer-1-mobile":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true,
+      "blockClass":"footerBackground"
     },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+    "children":[
+      "flex-layout.col#footer-1-mobile"
+    ]
   },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
+  "flex-layout.col#footer-1-mobile":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "flex-layout.row#atendimento",
+      "flex-layout.row#institucional",
+      "flex-layout.row#ajuda",
+      "flex-layout.row#atelie",
+      "flex-layout.row#enxoval",
+      "rich-text#social-network-mobile",
+      "social-networks"
+    ]
+  },
+
+  
+  "flex-layout.row#atendimento":{
+    "props":{
+      "blockClass":"footerMenuRow"
+    },
+    "children":[
+      "rich-text#atendimento-title-mobile",
+      "rich-text#plus"
+    ]
+  },
+  "flex-layout.row#institucional":{
+    "props":{
+      "blockClass":"footerMenuRow"
+    },
+    "children":[
+      "rich-text#institucional-title-mobile",
+      "rich-text#plus"
+    ]
+  },
+  "flex-layout.row#ajuda":{
+    "props":{
+      "blockClass":"footerMenuRow"
+    },
+    "children":[
+      "rich-text#suporte-title-mobile",
+      "rich-text#plus"
+    ]
+  },
+  "flex-layout.row#atelie":{
+    "props":{
+      "blockClass":"footerMenuRow"
+    },
+    "children":[
+      "rich-text#atelie-title-mobile",
+      "rich-text#plus"
+    ]
+  },
+  "flex-layout.row#enxoval":{
+    "props":{
+      "blockClass":"footerMenuRow"
+    },
+    "children":[
+      "rich-text#enxoval-title-mobile",
+      "rich-text#plus"
+    ]
+  },
+  "rich-text#plus":{
+    "props":{
+      "textAlignment": "CENTER",
+      "textPosition": "RIGHT",
+      "text":"+",
+      "blockClass":"menuPlus"
     }
+  },
+  "rich-text#atendimento-title-mobile":{
+    "props":{
+      "text":"Atendimento",
+      "blockClass":"titleRichMobile"
+    }
+  },
+  "rich-text#institucional-title-mobile":{
+    "props":{
+      "text":"Institucional",
+      "blockClass":"titleRichMobile"
+    }
+  },
+  "rich-text#suporte-title-mobile":{
+    "props":{
+      "text":"Ajuda e suporte",
+      "blockClass":"titleRichMobile"
+    }
+  },
+  "rich-text#atelie-title-mobile":{
+    "props":{
+      "text":"Nosso Ateliê BH",
+      "blockClass":"titleRichMobile"
+    }
+  },
+  "rich-text#enxoval-title-mobile":{
+    "props":{
+      "text":"Enxoval Merci",
+      "blockClass":"titleRichMobile"
+    }
+  },
+  "rich-text#social-network-mobile":{
+    "props":{
+      "text":"Redes Sociais",
+      "blockClass":"titleRichMobileNetworks"
+    }
+  },
+
+  "flex-layout.row#footer-2-mobile":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "preventVerticalStretch":true
+    },
+    "children":[
+      "flex-layout.row#payment-methods"
+    ]
+  },
+  "flex-layout.row#footer-3-mobile":{
+    "props":{
+      "fullWidth":true
+    },
+    "children":[
+      "flex-layout.col#footer-3-mobile"
+    ]  
+  },
+  "flex-layout.col#footer-3-mobile":{
+    "children":[
+      "rich-text#all-rights",
+      "rich-text#endereco",
+      "rich-text#vedada-prod"
+    ],
+    "props":{
+      "fullWidth":true,
+      "blockClass":"footerCol"
+    }
+  },
+  "flex-layout.row#footer-4-mobile":{
+    "props":{
+      "fullWidth":true,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "blockClass":"poweredByRow"
+    },
+    "children":[
+      "image#B2U",
+      "image#acct",
+      "image#vtex"
+    ]
   }
 }

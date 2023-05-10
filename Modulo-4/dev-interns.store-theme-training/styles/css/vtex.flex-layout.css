@@ -1,3 +1,4 @@
+
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
@@ -140,6 +141,15 @@
   max-width: 1240px;
   width: 100vw;
 }
+.flexRow--mobileForm{
+  padding: 15px 14px 15px;
+  border-top-left-radius: 92px;
+  border-top-right-radius: 92px;
+  box-shadow: 0px 15px 32px 0px rgba(0, 0, 0, .13);
+  background: #fff;
+  max-width: 1240px;
+  width: 100vw;
+}
 .flexRowContent--desktopForm{
   width: 100w !important;
 }
@@ -157,4 +167,61 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.flexRowContent--mobileHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  background-color: #73708b;
+}
+.flexRowContent--navMobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  overflow: hidden;
+}
+.flexRowContent--formRowMobile{
+  display: flex;
+  justify-content: center;
+}
+.flexRow--footerMenuRow{
+  width: 200px;
+}
+.flexRowContent--footerMenuRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flexRowContent--footerBackground{
+  background-color: #73708b;
+  padding: 25px 24px 27px 24px;
+}
+.flexRow--paymentsRow,.flexRow--poweredByRow{
+width: 100%;
+}
+.flexRowContent--paymentsRow,.flexRowContent--poweredByRow{
+  display: flex;
+  justify-content: center;
+}
+.flexRowContent--menuRow{
+  display: flex;
+  justify-content: flex-start;
+}
+.flexCol--menuCol1{
+  width: fit-content;
+  align-self: flex-start;
+}
+.flexColChild--menuCol1{
+  width: 286px;
+}
+.flexRowContent--menuRow:first-child{
+  width: fit-content;
+}
+.flexCol--menuCol2{
+  margin-left: 10px;
+}
+.flexCol--menuItems{
+  padding: 0 15px;
 }

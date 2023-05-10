@@ -114,6 +114,9 @@
 .logoContainer--icons{
   padding: 0px 18px 0px 0px ;
 }
+.logoLink--mobileLogo{
+  margin: 0 107px;
+}
 .logoLink--logo{
   width: 106;
   height: 101;
@@ -205,4 +208,12 @@
 .imageElement--imageSend{
   align-self: center;
   justify-self: flex-start;
+}
+.logoContainer--iconsMobileSearch{
+  padding: 0;
+  margin-left: 18px;
+}
+.imageElement--menuImage{
+  width: 100% !important;
+  height: 191px;
 }

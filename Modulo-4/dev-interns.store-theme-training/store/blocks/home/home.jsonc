@@ -1,13 +1,41 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile"
     ]
   },
-//Primeiro conteudo:slidere de duas imagens
-  "list-context.image-list#demo": {
+//Primeiro conteudo:slider de duas imagens
+  //--ignorar---
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  //----
+  "responsive-layout.desktop#desktop":{
+    "children":[
+      "list-context.image-list#demo-desktop",
+      "rich-text#desktop",
+      "flex-layout.row#desktop-cards",
+      "rich-text#desktop-destaque",
+      "flex-layout.row#slider-shelf",
+      "image#desktop-casamento",
+      "info-card#desktop",
+      "rich-text#siga-nos",
+      "flex-layout.row#desktop-about-us"
+
+    ]
+  },
+  "list-context.image-list#demo-desktop": {
     "children": ["slider-layout#demo-images"],
     "props": {
       "height": 720,
@@ -35,34 +63,6 @@
       "fullWidth":true,
       "blockClass": "carousel"
     }
-  },
-  //--ignorar---
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-  //----
-  "responsive-layout.desktop#desktop":{
-    "children":[
-      "rich-text#desktop",
-      "flex-layout.row#desktop-cards",
-      "rich-text#desktop-destaque",
-      "flex-layout.row#slider-shelf",
-      "image#desktop-casamento",
-      "info-card#desktop",
-      "rich-text#siga-nos",
-      "flex-layout.row#desktop-about-us"
-
-    ]
   },
   "flex-layout.row#slider-shelf":{
     "props":{
@@ -295,14 +295,33 @@
   //MOBILE
   "responsive-layout.mobile#mobile":{
     "children":[
+      "list-context.image-list#demo-mobile",
       "rich-text#mobile",
       "slider-layout#slider-images",
       "rich-text#mobile-destaque",
+      "list-context.product-list",
       "image#mobile-casamento",
       "info-card#desktop",
       "rich-text#siga-nos",
       "flex-layout.row#mobile-about-us"
     ]
+  },
+  "list-context.image-list#demo-mobile": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 215,
+      "images": [
+        {
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203781/proj-banner-dia-das-m%C3%A3es-23-desktop.jpg?v=638175186774170000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203782/proj-banner-dia-das-mães-23-mobile.png?v=638175187290200000"
+        },
+        {
+          "image": "https://merciwithlove.vteximg.com.br/arquivos/ids/203781/proj-banner-dia-das-m%C3%A3es-23-desktop.jpg?v=638175186774170000",
+          "mobileImage": "https://merciwithlove.vteximg.com.br/arquivos/ids/203718/banner-adele-pocket-corrente-mobile.png?v=638168308572900000"
+        }
+      ],
+      "blockClass":"sliderMobile"
+    }
   },
   "rich-text#mobile":{
     "props":{
@@ -384,10 +403,22 @@
     },
     "children":[
       "image#logoAboutUs",
-      "rich-text#textAboutUsTitle",
-      "rich-text#textAboutUs",
+      "rich-text#textAboutUsTitleMobile",
+      "rich-text#textAboutUsMobile",
       "flex-layout.row#mobile-form"
     ]
+  },
+  "rich-text#textAboutUsTitleMobile":{
+    "props":{
+      "text":"SOBRE A MARCA",
+      "blockClass":"aboutUsMobile"
+    }
+  },
+  "rich-text#textAboutUsMobile":{
+    "props":{
+      "text":"A MerciWithLove é uma marca de artigos de couro 100% natural em que tudo pode ser personalizado de acordo com o desejo de cada cliente.",
+      "blockClass":"paragraphMobile"
+    }
   },
   "flex-layout.row#mobile-form":{
     "props":{
@@ -407,12 +438,21 @@
       "fullWidth":true,
       "horizontalAlign":"center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass":"formRowMobile"
     },
     "children":[
       "image#email-logo",
-      "rich-text#newsletter"
+      "rich-text#newsletterMobile"
     ]
+  },
+  "rich-text#newsletterMobile":{
+    "props":{
+      "text":"NEWSLETTER",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":"formLogoMobile"
+    }
   },
   "newsletter-form#mobileForm":{
     "props":{
