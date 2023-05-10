@@ -1,0 +1,33 @@
+<tr>
+  <td class="ph4 pv3">
+      <h2>((i18n.shipping.summaryTitle))</h2>
+      <p>((i18n.order.reference))</p>
+  </td>
+</tr>
+<tr>
+  <td class="lh-solid ph4 pb3">
+      <h3 class="h3">((i18n.shipping.delivery))</h3>
+      <p>{{shippingData.address.receiverName}}</p>
+      <p>{{shippingData.address.street}}, {{shippingData.address.number}}</p>
+      <p>{{shippingData.address.neighborhood}} - {{shippingData.address.city}} - {{shippingData.address.state}} </p>
+      <p>{{shippingData.address.postalCode}}</p>
+  </td>
+<tr>
+  <td class="ph4">
+      <h3 class="h3">((i18n.shipping.standardDelivery))</h3>
+          <p>((i18n.shipping.scheduled)) ((i18n.shipping.lowercase.in)) ((i18n.shipping.lowercase.upTo)) <strong>{{parseMyInt shippingData.logisticsInfo.0.slas.0.shippingEstimate}} ((i18n.shipping.businessDays))</strong></p>
+      <p>((i18n.shipping.estimateMessage))</p>
+  </td>
+</tr>
+
+<!-- partial:line.hbs -->
+<!-- partial -->
+
+<!-- partial:items.hbs -->
+<!-- partial -->
+
+<!-- partial:line.hbs -->
+<!-- partial -->
+
+<!-- partial:payment.hbs -->
+<!-- partial -->

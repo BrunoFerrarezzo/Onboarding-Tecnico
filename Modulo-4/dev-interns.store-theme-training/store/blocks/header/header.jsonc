@@ -83,7 +83,8 @@
       "preventHorizontalStretch":true
     },
     "children":[
-      "rich-text#viagens",
+      "vtex.menu@2.x:menu#viagens",
+      //"rich-text#viagens",
       "rich-text#paraela",
       "rich-text#paraele",
       "rich-text#paraele",
@@ -187,6 +188,80 @@
       "width": "28",
       "height":"28",
       "blockClass":"icons"
+    }
+  },
+  "header-layout.mobile": {
+    "children": [
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ]
+  },
+  "flex-layout.row#1-mobile": {
+    "props": {
+      "fullWidth": true,
+      "horizontalAlign":"center",
+      "blockClass":"mobileHeader"
+    }
+  },
+  "flex-layout.row#2-mobile":{
+    "props":{
+      "horizontalAlign":"center",
+      "preventVerticalStretch":true,
+      "preventHorizontalStretch":true,
+      "blockClass":"navMobile"
+    },
+    "children":[
+      "rich-text#hamburguer",
+      "logo#search-mobile",
+      "logo#mobile",
+      "logo#profile-mobile",
+      "logo#cart-mobile"
+    ]
+  },
+  "rich-text#hamburguer":{
+    "props":{
+      "text":"|||",
+      "blockClass":"menuHamburguer"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/logo@2x.png",
+      "width": "80",
+      "height":"65",
+      "blockClass": ["logo","mobileLogo"]
+    }
+  },
+  "logo#search-mobile": {
+    "props": {
+      "title": "Search",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-search.png",
+      "width": "27",
+      "height":"28",
+      "blockClass":["icons","iconsMobileSearch"]
+    }
+  },
+  "logo#profile-mobile": {
+    "props": {
+      "title": "Profile",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-user.png",
+      "width": "24",
+      "height":"28",
+      "blockClass":["icons","iconsMobileProfile"]
+    }
+  },
+  "logo#cart-mobile": {
+    "props": {
+      "title": "Cart",
+      "href": "/",
+      "url": "https://merciwithlove.vteximg.com.br/arquivos/ico-shopping-cart.png",
+      "width": "28",
+      "height":"28",
+      "blockClass":["icons","iconsMobileCart"]
     }
   }
 }
