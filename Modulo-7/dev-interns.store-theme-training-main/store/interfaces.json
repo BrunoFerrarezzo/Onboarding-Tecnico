@@ -1,5 +1,5 @@
 {
-  "rating-reviews-form":{
-    "component": "RatingReviewsForm"
+  "rating-reviews":{
+    "component": "RatingReviews"
   }
 }
