@@ -14,7 +14,7 @@ export const getUserInfo = async (sku,rating,comment) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'VtexIdclientAutCookie': 'eyJhbGciOiJFUzI1NiIsImtpZCI6IjE3MkRGODk2REQ2MkQ3Mzk4MzkxOTNDODBCMjc4MzBBRkNENTY1OUIiLCJ0eXAiOiJqd3QifQ.eyJzdWIiOiJicnVuby5mZXJyYXJlenpvQGFjY3QuZ2xvYmFsIiwiYWNjb3VudCI6ImVzdGFnaW9hY2N0IiwiYXVkaWVuY2UiOiJhZG1pbiIsInNlc3MiOiIwZDQ4MzJmNC05MWZkLTQxY2ItOTZiOC1lNmU5YmVhNTljZWEiLCJleHAiOjE2ODM5NzYzMzEsInVzZXJJZCI6ImZhMGEwNzQ1LTZlYWQtNDU3ZC1hOGQzLTQ2NzAyYTg3OGRlZSIsImlhdCI6MTY4Mzg4OTkzMSwiaXNzIjoidG9rZW4tZW1pdHRlciIsImp0aSI6IjI2ZjIxY2I4LTVhZjctNDgxZS1hYWI0LTMxNzcxZTJhOGFkMSJ9.l0hMnnm1ZvMGuiZQMegLV0nvJuC7uG4RugysxtPeBqbhMk1PNKO1NfHJoA95IDHdjyI1o6Pxa6AKXV5yrHs4Ug'
+        'VtexIdclientAutCookie': 'SEU_COOKIE_AQUI'
       },
       body: JSON.stringify(data)
     });
