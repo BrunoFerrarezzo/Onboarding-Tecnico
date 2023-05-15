@@ -14,7 +14,7 @@ export const getUserInfo = async (sku,rating,comment) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'VtexIdclientAutCookie': 'SEU_COOKIE_AQUI'
+        //'VtexIdclientAutCookie': 'SEU_COOKIE_AQUI'
       },
       body: JSON.stringify(data)
     });
