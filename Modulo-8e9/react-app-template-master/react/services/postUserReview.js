@@ -2,7 +2,7 @@
 /* eslint-disable object-shorthand */
 /* eslint-disable no-undef */
 
-export const getUserInfo = async (sku, rating, comment) => {
+export const postUserReview = async (sku, rating, comment) => {
   const date = new Date()
   const data = {
     userName: 'bruno.ferrarezzo',

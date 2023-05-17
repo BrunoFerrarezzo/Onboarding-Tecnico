@@ -6,7 +6,7 @@
 import React, { useState } from 'react'
 import { useProduct } from 'vtex.product-context'
 
-import { getUserInfo } from './api.js'
+import { postUserReview } from '../services/postUserReview.js'
 
 const RatingReviews = () => {
   const productContextValue = useProduct()
@@ -85,7 +85,7 @@ const RatingReviews = () => {
 
     console.log(sku, '<-sku')
 
-    getUserInfo(sku, rating, comment).then((response) => {
+    postUserReview(sku, rating, comment).then((response) => {
       if (response === 201) {
         setModal(modalCreated)
       } else {
