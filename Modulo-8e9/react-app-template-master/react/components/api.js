@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable object-shorthand */
 /* eslint-disable no-undef */
 
@@ -25,6 +26,8 @@ export const getUserInfo = async (sku, rating, comment) => {
     )
 
     if (response.status === 201) {
+      console.log(response)
+
       return response.status
     }
   } catch (error) {

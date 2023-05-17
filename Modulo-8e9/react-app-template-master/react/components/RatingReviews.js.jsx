@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/jsx-no-comment-textnodes */
@@ -9,9 +10,8 @@ import { getUserInfo } from './api.js'
 
 const RatingReviews = () => {
   const productContextValue = useProduct()
-
+  const sku = productContextValue.selectedItem.itemId
   // estados utilizados para recuperar dados do formulário
-  const [sku, setSku] = useState('')
   const [rating, setRating] = useState('')
   const [comment, setComment] = useState('')
   // estado que define qual o contúdo do modal, se estiver inativo conteudo = null
@@ -19,9 +19,7 @@ const RatingReviews = () => {
 
   // atualiza o valor de sku, rating e comment quando esses respectivos campos estão sendo modificados
   const handleChange = (event) => {
-    if (event.target.id === 'sku') {
-      setSku(event.target.value)
-    } else if (event.target.id === 'rating') {
+    if (event.target.id === 'rating') {
       setRating(event.target.value)
     } else {
       setComment(event.target.value)
@@ -79,14 +77,13 @@ const RatingReviews = () => {
   // se foram preenchidos corretamente chama a função que realiza o fetch e atualiza o valor do modal
   const handleSubmit = (event) => {
     event.preventDefault() // evita que a pagina seja atualizada ao enviar o formulário
-    if (sku.trim() === '' || rating.trim() === '') {
+    if (rating.trim() === '') {
       setModal(modalFields)
-      const skuzinho = productContextValue.selectedItem.itemId
-      // eslint-disable-next-line no-console, padding-line-between-statements
-      console.log(skuzinho)
 
       return
     }
+
+    console.log(sku, '<-sku')
 
     getUserInfo(sku, rating, comment).then((response) => {
       if (response === 201) {
@@ -104,14 +101,7 @@ const RatingReviews = () => {
           className="flex flex-column helvetica w-30 items-center mb7 ph5 pv7 ba bw1"
           onSubmit={handleSubmit}
         >
-          <h2>Envie a avaliação</h2>
-          <input
-            className="h2 mt3 pa2 w-100"
-            id="sku"
-            type="text"
-            placeholder="Digite o sku do produto"
-            onChange={handleChange}
-          />
+          <h2>Envie sua avaliação</h2>
           <input
             className="h2 mt3 pa2 w-100"
             id="rating"
