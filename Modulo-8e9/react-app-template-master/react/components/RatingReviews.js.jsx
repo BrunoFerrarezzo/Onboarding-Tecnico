@@ -5,8 +5,11 @@
 
 import React, { useState } from 'react'
 import { useProduct } from 'vtex.product-context'
+import { useMutation } from 'react-apollo'
 
-import { postUserReview } from '../services/postUserReview.js'
+import CREATE_REVIEW from '../graphql/mutations/createReview.gql'
+
+const date = new Date()
 
 const RatingReviews = () => {
   const productContextValue = useProduct()
@@ -16,6 +19,7 @@ const RatingReviews = () => {
   const [comment, setComment] = useState('')
   // estado que define qual o contúdo do modal, se estiver inativo conteudo = null
   const [modal, setModal] = useState(null)
+  const [createReview] = useMutation(CREATE_REVIEW)
 
   // atualiza o valor de sku, rating e comment quando esses respectivos campos estão sendo modificados
   const handleChange = (event) => {
@@ -84,9 +88,25 @@ const RatingReviews = () => {
     }
 
     console.log(sku, '<-sku')
-
-    postUserReview(sku, rating, comment).then((response) => {
-      if (response === 201) {
+    createReview({
+      variables: {
+        dataEntity: 'rating_reviews_bf',
+        account: 'estagioacct',
+        schema: 'rating_reviews_bf_schema',
+        document: {
+          document: {
+            userName: 'bruno.ferrarezzo',
+            sku,
+            date: `${date.getDate()}/${
+              date.getMonth() + 1
+            }/${date.getFullYear()}`,
+            rating: parseInt(rating, 10),
+            comment,
+          },
+        },
+      },
+    }).then((response) => {
+      if (response.data.createDocumentV2 !== null) {
         setModal(modalCreated)
       } else {
         setModal(modalError)
