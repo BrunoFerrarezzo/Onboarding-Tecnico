@@ -11,6 +11,14 @@ import CREATE_REVIEW from '../graphql/mutations/createReview.gql'
 
 const date = new Date()
 
+interface Document {
+  username: string
+  sku: number
+  date: string
+  rating: number
+  comment: string
+}
+
 const RatingReviews = () => {
   const productContextValue = useProduct()
   const sku = productContextValue.selectedItem.itemId
@@ -87,7 +95,16 @@ const RatingReviews = () => {
       return
     }
 
-    console.log(sku, '<-sku')
+    const document: Document = {
+      username: 'bruno.ferrarezzo',
+      sku: parseInt(sku, 10),
+      date: `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`,
+      rating: parseInt(rating, 10),
+      comment: `${comment}`,
+    }
+
+    console.log(document)
+
     createReview({
       variables: {
         dataEntity: 'rating_reviews_bf',
@@ -95,6 +112,8 @@ const RatingReviews = () => {
         schema: 'rating_reviews_bf_schema',
         document: {
           document: {
+            document,
+            /*
             userName: 'bruno.ferrarezzo',
             sku,
             date: `${date.getDate()}/${
@@ -102,6 +121,7 @@ const RatingReviews = () => {
             }/${date.getFullYear()}`,
             rating: parseInt(rating, 10),
             comment,
+            */
           },
         },
       },
