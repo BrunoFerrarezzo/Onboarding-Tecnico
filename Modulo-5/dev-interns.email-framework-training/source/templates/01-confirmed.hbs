@@ -15,6 +15,11 @@
   max-width: 620px;
 
   ">
+    <tr>
+      {{#eq orders.0.clientProfileData.lastName "Priolli"}}
+        <td style="background-color: green; display:block"> Priolli</td>
+        {{/eq}}
+    </tr>
     <tr style="margin:0; padding 0;">
       <td style="display:block;width: 620px;text-align: center;">
         <p style="
@@ -82,10 +87,8 @@
     </tr>
     <tr>
       <td>
-        <p>Olá, 
-            {{#with orders.clientProfileData}}
-              {{firstName}}
-            {{/with}}
+        <p>
+          Olá, {{orders.0.clientProfileData.lastName}}
       </p>
       </td>
     </tr>
