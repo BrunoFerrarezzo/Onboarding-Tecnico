@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "teste",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
@@ -7,6 +7,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
     "lint:locales": "intl-equalizer",
     "test": "cd ./react && yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{ts,js,tsx,jsx}": [
@@ -24,6 +29,7 @@
     ]
   },
   "devDependencies": {
+    "@vtex/danger": "^0.2.7",
     "@vtex/intl-equalizer": "^2.5.0",
     "@vtex/prettier-config": "^0.3.5",
     "eslint": "^7.14.0",
@@ -32,12 +38,14 @@
     "husky": "^4.3.0",
     "lint-staged": "^10.5.1",
     "prettier": "^2.2.0",
-    "typescript": "^3.9.6",
-    "@vtex/danger": "^0.2.7"
+    "typescript": "^3.9.6"
   },
   "version": "0.0.0",
   "intl-equalizer": {
     "referenceLocale": "en",
     "localeDirectory": "messages"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.14"
   }
 }

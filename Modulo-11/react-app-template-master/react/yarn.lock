@@ -2527,9 +2527,9 @@ esprima@^4.0.0, esprima@^4.0.1:
   resolved "https://registry.npmjs.org/esprima/-/esprima-4.0.1.tgz"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
-"estagioacct.test@https://brunoferrarezzo--estagioacct.myvtex.com/_v/private/typings/linked/v1/estagioacct.test@0.0.1+build1685022611/public/@types/estagioacct.test":
+"estagioacct.test@https://brunoferrarezzo--estagioacct.myvtex.com/_v/private/typings/linked/v1/estagioacct.test@0.0.1+build1685360684/public/@types/estagioacct.test":
   version "0.0.1"
-  resolved "https://brunoferrarezzo--estagioacct.myvtex.com/_v/private/typings/linked/v1/estagioacct.test@0.0.1+build1685022611/public/@types/estagioacct.test#e831ee205ab28d4e6dc47e0ebf650834bfe300ee"
+  resolved "https://brunoferrarezzo--estagioacct.myvtex.com/_v/private/typings/linked/v1/estagioacct.test@0.0.1+build1685360684/public/@types/estagioacct.test#6b0f0f575dd8f0fc288c342d77a49248f14d9a91"
 
 estraverse@^4.2.0:
   version "4.3.0"
@@ -5385,6 +5385,10 @@ verror@1.10.0:
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime":
   version "8.132.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime#66bb41bd4d342e37c9d85172aad5f7eefebfb6dc"
+
+"vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.52.0/public/@types/vtex.search-graphql":
+  version "0.52.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.52.0/public/@types/vtex.search-graphql#40069ed320b6eb9de9a419ea641f30b908d0dcd3"
 
 w3c-hr-time@^1.0.1:
   version "1.0.2"

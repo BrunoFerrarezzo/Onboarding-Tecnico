@@ -1,0 +1,8 @@
+query GET_PRODUCT($skuValue: ID!) {
+  product(identifier: { field: sku, value: $skuValue })
+    @context(provider: "vtex.search-graphql") {
+    productId
+    productName
+    description
+  }
+}

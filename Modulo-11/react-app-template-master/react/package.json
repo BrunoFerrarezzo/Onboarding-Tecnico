@@ -20,11 +20,12 @@
     "@vtex/test-tools": "^3.4.3",
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
-    "estagioacct.test": "https://brunoferrarezzo--estagioacct.myvtex.com/_v/private/typings/linked/v1/estagioacct.test@0.0.1+build1685022611/public/@types/estagioacct.test",
+    "estagioacct.test": "https://brunoferrarezzo--estagioacct.myvtex.com/_v/private/typings/linked/v1/estagioacct.test@0.0.1+build1685360684/public/@types/estagioacct.test",
     "graphql": "^14.6.0",
     "typescript": "3.9.7",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime"
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
+    "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.52.0/public/@types/vtex.search-graphql"
   },
   "resolutions": {
     "@types/jest": "26.0.15"

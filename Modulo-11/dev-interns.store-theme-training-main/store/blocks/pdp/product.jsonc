@@ -29,7 +29,7 @@
     "props": {
       "marginBottom": 7
     },
-    "children": ["product-description","test"]
+    "children": ["product-description","teste"]
   },
   "condition-layout.product#availability": {
     "props": {
